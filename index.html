@@ -1,0 +1,160 @@
+
+<!-- saved from url=(0086)https://virtual.foxit.com.ar/pluginfile.php/134/mod_lesson/page_contents/59/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+</head>
+
+<body>
+
+<script>
+//tpn1
+console.log("Hola Mundo JavaScript")
+console.log(5)
+console.log(5)
+console.log(1992)
+console.log(5)
+
+//tpn2
+
+cantidadDeVentanasEnMiCasa = 4;
+console.log(cantidadDeVentanasEnMiCasa)
+soyHumano= true
+console.log(soyHumano)
+miGustoDePizzaPreferido = 'clasica'
+console.log(miGustoDePizzaPreferido)
+v=false
+console.log(v)
+v='Hola'
+console.log(v)
+v=0 
+console.log(v)
+v='Minions'
+console.log(v)
+
+//tarea 3-1
+var noValgoNi5 =4;
+console.log(noValgoNi5)
+var miAnioDeNacimiento=1992;
+var meGustariaTener80Anios=80;
+var voyATener80ElAnio= miAnioDeNacimiento+ meGustariaTener80Anios;
+
+
+
+console.log(voyATener80ElAnio);
+
+var costoDeUnaTele= 10000;
+
+var ahorros = 9000;
+
+var dineroQueMeFalta=costoDeUnaTele - ahorros;
+
+console.log(dineroQueMeFalta);
+
+
+
+diasPorAnio = 365
+
+cantidadDeAniosEnUnaDecada = 10
+
+cantidadDeDiasEnUnaDecada = diasPorAnio * cantidadDeAniosEnUnaDecada
+
+console.log(cantidadDeDiasEnUnaDecada)
+
+porciones = 8
+
+cantidadDePorcionesEnLaMesa = 24
+
+pizzas = cantidadDePorcionesEnLaMesa / porciones
+
+console.log(pizzas)
+var miAnimalFavorito= 'cobayo';
+
+var sonDistintos = miAnimalFavorito == 'perro';
+console.log(sonDistintos)
+var sonDiferentes = 'flan' != 'flan con dulce de leche';
+console.log(sonDiferentes);
+
+
+soyMayorDeEdad = 29 > 17 ;
+console.log(soyMayorDeEdad)
+
+soyMenorDe25 = 29 < 25 ;
+console.log(soyMenorDe25)
+
+estamosEnEnero = 'febrero' === 'enero';
+console.log(estamosEnEnero)
+
+noEstamosEnEnero = 'febrero' !== 'enero';
+console.log(noEstamosEnEnero)
+
+miNotaEnElParcial = 8
+
+notaMinimaParaAprobar = 6
+
+estoyAprobado = miNotaEnElParcial >= notaMinimaParaAprobar ;
+
+console.log(estoyAprobado)
+esHoraDeAlmorzar= 9 <= 12;
+console.log(esHoraDeAlmorzar)
+
+//practico 3-2
+
+//Algoritmo es un conjunto de instrucciones o reglas definidas y no-ambiguas, ordenadas y finitas que permite, típicamente, solucionar un problema
+//Ejemplo (sumar dos numeros: 1-ingresar el primer numero. 2) ingresar el segundo numero. 3) sumar 4) mostrar la solucion
+//pseudocodigo como lo indica el pseudo es una resolucion en pasos de un problema con un nivel de abstraccion mas detallado que el lenguaje natural, pero sin encasillarse aun en un tipo de lenguaje de codificacion de maquina.
+//ejemplo Inicio Escribir "Hola Mundo" Fin
+
+var text1, text2;
+text1 = parseInt(prompt("Ingresar la base del rectangulo"));
+text2 = parseInt(prompt("Ingresar la altura del rectangulo"));
+console.log("El area del rectangulo es: " + (text1 *text2));
+
+var text1, text2, text3;
+text1 = parseInt(prompt("Ingresar un numero"));
+text2 = parseInt(prompt("Ingresar un numero"));
+text3 = parseInt(prompt("Ingresar un numero"));
+console.log("El producto de los numeros es: " + (text1 *text2*text3));
+console.log("La suma de los numeros es: " + (text1+text2+text3));
+console.log("El promedio de los numeros es: " + ((text1+text2+text3)/3));
+
+var art1, art2, art3, art4, art5;
+art1=['banana',10,0]; art2=['manzana',"20","0"];art3=['pera',"30","0"];art4=['tomate',"40","0"];art5=['zanahoria',"50","0"];
+
+   art1[2]= parseInt(art1[1]*15/100);
+    art2[2]= parseInt(art2[1]*15/100);
+	 art3[2]= parseInt(art3[1]*15/100);
+	  art4[2]= parseInt(art4[1]*15/100);
+	   art5[2]= parseInt(art5[1]*15/100);
+	   
+	     // var arr = [ 1, 2, 3 ];
+    //for (var i = 0; i <= art1.length; i++) {
+     //  console.log(arr[i]);
+   // } +
+   
+   
+   console.log("El producto: " + art1[0] + " sale " + art1[1] + " tiene un descuento del 15 porciento que es: " +  parseInt(art1[2]));
+    console.log("El producto: " + art2[0] + " sale " + art2[1] + " tiene un descuentoto del 15 porciento que es: " + parseInt(art2[2]));
+  console.log("El producto: " + art3[0] + " sale " + art3[1] + " tiene un descuento del 15 porciento que es: " + parseInt(art3[2]));
+  console.log("El producto: " + art4[0] + " sale " + art4[1] + " tiene un descuento del 15 porciento que es: " + parseInt(art4[2]));
+  console.log("El producto: " + art5[0] + " sale " + art5[1] + " tiene un descuento del 15 porciento que es: " + parseInt(art5[2]));
+ 
+   sumaT =  parseInt( art1[1])+ parseInt( art2[1])+ parseInt( art3[1])+ parseInt( art4[1])+ parseInt( art5[1])
+   sumaD =  parseInt( art1[2])+ parseInt( art2[2])+ parseInt( art3[2])+ parseInt( art4[2])+ parseInt( art5[2])
+   
+ console.log("El precio total es: " + sumaT);
+console.log("El descuento total es: " + sumaD); 
+console.log("El precio con descuento es: " + (sumaT - sumaD)); 
+   
+	   
+   
+   
+
+
+</script>
+
+
+
+
+
+</body></html>
